@@ -1,0 +1,26 @@
+{
+  "name": "magnar-scraper-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scraper HTTP en TypeScript para jurisprudencia.pj.gob.pe — desafío Magnar",
+  "scripts": {
+    "scrape": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "demo": "tsx src/index.ts --demo",
+    "retry": "tsx src/index.ts --retry",
+    "test": "tsx --test src/parse.test.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.0"
+  }
+}
