@@ -1,5 +1,6 @@
 import { retryFailedDownloads } from "./retry";
-import { runScrape, type ScrapeOptions } from "./scrape";
+import { runScrape } from "./scrape";
+import type { ScrapeOptions } from "./types";
 
 function arg(flag: string, fallback?: string): string | undefined {
   const idx = process.argv.indexOf(flag);
